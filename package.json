@@ -1,27 +1,27 @@
 {
-  "name": "bcuns-api",
+  "name": "comics-api",
   "version": "2.8.5",
-  "description": "Vietnamese Bcuns API for Node using scraping technique",
+  "description": "Vietnamese Comics API for Node using scraping technique",
   "main": "index.ts",
   "repository": {
-    "url": "https://github.com/baocuns/BcunsCrawlServer",
+    "url": "https://github.com/pth-1641/Comics-API",
     "type": "git"
   },
-  "homepage": "https://github.com/baocuns/BcunsCrawlServer",
+  "homepage": "https://github.com/pth-1641/Comics-API",
   "keywords": [
     "api",
-    "bcuns",
-    "bcuns-api",
+    "comics",
+    "comics-api",
     "scaping"
   ],
   "author": {
-    "name": "baocuns",
-    "email": "nvb251021@gmail.com"
+    "name": "pth-1641",
+    "email": "pth16042001@gmail.com"
   },
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.ts",
-    "vercel-build": "echo baocuns"
+    "dev": "nodemon api/index.ts",
+    "vercel-build": "echo pth-1641"
   },
   "dependencies": {
     "axios": "^1.4.0",
