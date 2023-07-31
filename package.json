@@ -1,0 +1,40 @@
+{
+  "name": "bcuns-api",
+  "version": "2.8.5",
+  "description": "Vietnamese Bcuns API for Node using scraping technique",
+  "main": "index.ts",
+  "repository": {
+    "url": "https://github.com/baocuns/BcunsCrawlServer",
+    "type": "git"
+  },
+  "homepage": "https://github.com/baocuns/BcunsCrawlServer",
+  "keywords": [
+    "api",
+    "bcuns",
+    "bcuns-api",
+    "scaping"
+  ],
+  "author": {
+    "name": "baocuns",
+    "email": "nvb251021@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.ts",
+    "vercel-build": "echo baocuns"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.2",
+    "@vercel/node": "^2.15.6",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
