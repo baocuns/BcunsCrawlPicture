@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(require('cors')());
 
-app.get('/images', async (req: any, res: any) => {
+app.get('/images', async (req, res) => {
   try {
     const { src } = req.query;
     const response = await axios.get(src, {
