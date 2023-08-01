@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "comic-api",
-  "builds": [{ "src": "/api/index.ts", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/api/index.ts" }]
+  "name": "bcuns-api",
+  "builds": [{ "src": "./index.ts", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "./index.ts" }]
 }
