@@ -1,18 +1,18 @@
-import express from 'express';
-import axios from 'axios';
+const express = require("express");
+const axios = require("axios");
 
 const app = express();
 const PORT = process.env.PORT || 80;
 
-app.use(require('cors')());
+app.use(require("cors")());
 
-app.get('/images', async (req, res) => {
+app.get("/images", async (req, res) => {
   try {
     const { src } = req.query;
     const response = await axios.get(src, {
-      responseType: 'stream',
+      responseType: "stream",
       headers: {
-        referer: 'https://www.nettruyen.com',
+        referer: "https://www.nettruyen.com",
       },
     });
     response.data.pipe(res);
@@ -25,7 +25,7 @@ app.get('/images', async (req, res) => {
 app.use((req, res) => {
   res.json({
     status: 404,
-    message: 'Not Found',
+    message: "Not Found",
   });
 });
 
