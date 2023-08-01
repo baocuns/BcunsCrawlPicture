@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Comics } from '..';
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 80;
 
 app.use(require('cors')());
 
