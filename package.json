@@ -20,7 +20,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon api/index.ts",
+    "dev": "nodemon index.ts",
     "vercel-build": "echo pth-1641"
   },
   "dependencies": {
