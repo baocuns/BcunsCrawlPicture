@@ -20,6 +20,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "start": "node index.ts",
     "dev": "nodemon index.ts",
     "vercel-build": "echo baocuns"
   },

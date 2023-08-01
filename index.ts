@@ -2,7 +2,7 @@ import express from 'express';
 import axios from 'axios';
 
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8080;
 
 app.use(require('cors')());
 
