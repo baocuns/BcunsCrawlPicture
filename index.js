@@ -15,15 +15,18 @@ app.get("/images", async (req, res) => {
         referer: "https://www.nettruyen.com",
       },
     });
-    response.data.pipe(res);
+    return response.data.pipe(res);
   } catch (err) {
-    throw err;
+    return res.status(404).json({
+      status: 404,
+      message: "Picture Not Found",
+    });
   }
 });
 
 // Handle 404
 app.use((req, res) => {
-  res.json({
+  return res.status(404).json({
     status: 404,
     message: "Not Found",
   });
